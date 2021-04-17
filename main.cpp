@@ -10,7 +10,7 @@ int main ()
 {
   int qnt;
 
-  cout << "Informar a quantidade de teclas:";
+  cout << "Informar a quantidade de teclas e os códigos para criação da palavra (#, tecla, = e qtd vezes tecla pressionada):";
   cin >> qnt;
 
   cin.ignore(1); // o cin estava lendo duas vezes
@@ -30,4 +30,7 @@ int main ()
   }
 
   cout<< resultadoFinal << endl;
+
+  return 0;
+  
 }

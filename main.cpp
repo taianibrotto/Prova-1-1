@@ -13,14 +13,16 @@ int main ()
   cout << "Informar a quantidade de teclas:";
   cin >> qnt;
 
+  cin.ignore(1); // o cin estava lendo duas vezes
+
   while (qnt > 0)
   {
     string tecla;
     getline (cin, tecla);
 
-    int nTecla = (tecla [1] - '0') - 2; // conertendo para inteiro e acesando a matriz.
+    int nTecla = (tecla [1] - '0') - 2; // convertendo para inteiro e acesando a matriz.
 
-    int vezesTecla = (tecla [3] - '0') - 1; // conertendo para inteiro e acesando a matriz.
+    int vezesTecla = (tecla [3] - '0') - 1; // convertendo para inteiro e acesando a matriz.
 
     resultadoFinal += letras[nTecla][vezesTecla];
 

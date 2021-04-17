@@ -10,10 +10,12 @@ int main ()
 {
   int qnt;
 
-  cout << "Informar a quantidade de teclas e os códigos para criação da palavra (#, tecla, = e qtd vezes tecla pressionada):";
+  cout << "Informar a quantidade de teclas: ";
   cin >> qnt;
 
   cin.ignore(1); // o cin estava lendo duas vezes
+
+  cout<< "Informe os códigos (#tecla=vezestecla):" <<endl;
 
   while (qnt > 0)
   {

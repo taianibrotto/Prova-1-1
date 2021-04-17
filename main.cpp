@@ -18,9 +18,9 @@ int main ()
     string tecla;
     getline (cin, tecla);
 
-    int nTecla = (tecla [1] - '0') - 1;
+    int nTecla = (tecla [1] - '0') - 2; // conertendo para inteiro e acesando a matriz.
 
-    int vezesTecla = (tecla [2] - '0') - 2;
+    int vezesTecla = (tecla [3] - '0') - 1; // conertendo para inteiro e acesando a matriz.
 
     resultadoFinal += letras[nTecla][vezesTecla];
 
